@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="AWS Service Support table">
+    <meta name="keywords" content="aws,security,amazon,enterprise,defense,infosec,cyber">
+    <title>AWS Service Support table</title>
+    
+    <link rel="icon" href="https://summitroute.com/favicon.ico" sizes="16x16 32x32 64x64" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet">
+
+    <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+          </style>
+
+
+<link href="https://unpkg.com/tabulator-tables@4.1.4/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.1.4/dist/js/tabulator.min.js"></script>
+    </head>
+<body>
+
+
+<div class="container">
+<a href="https://github.com/SummitRoute/aws_research"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+                
+<center>
+    <h1>AWS Security Auditing tools comparison</h1>
+    <img src="https://summitroute.com/img/logo.png" width="200px"><br>
+    Created by Scott Piper of Summit Route, an independent AWS security consultant.
+</center>
+<br><br>
+<p>
+
+<p>Last Update: 2018.10.15
+
+<p>The goal of this table was to identify if one tool was better than the others to use. The conclusion is that due to the sparsity of the table, that the different auditing tools check different things.  In some cases the creators (of which I am one, for CloudMapper) may have different opinions on the usefulness or priority of some of the checks.
+
+<p>I covered all checks of <a href="https://github.com/tmobile/pacbot">PacBot</a>, <a href="https://github.com/toniblyx/prowler">Prowler</a>, and <a href="https://github.com/Netflix/security_monkey">Security Monkey</a>, and then only listed whether the other tools had those.  I did not list all of the additional checks of <a href="https://github.com/duo-labs/cloudmapper">CloudMapper</a>, TrustedAdvisor, or the default AWS Config Rules.
+
+<p>Sorry for the cell data get's clipped, you'll have to look at the json for the full notes (or send me a PR to fix this).
+
+
+<div id="table"></div>
+</div>
+
+<script>
+
+formatcolor = function(cell, formatterParams){
+    style ="";
+    if (cell.getValue() != "" && cell.getField() != "type") {
+        cell.getElement().style = "background-color:#b7e1cd";
+    };
+
+    return cell.getValue();
+};
+
+var table = new Tabulator("#table", {
+    layout:"fitColumns",
+    placeholder:"No Data Set",
+    columns:[
+        {title:"Rule", field:"rule", sorter:"string", width:200},
+        {title:"Type", field:"type", formatter:formatcolor, sorter:"string"},
+        {title:"PacBot", field:"pacbot", formatter:formatcolor, sorter:"string"},
+        {title:"Prowler", field:"prowler", formatter:formatcolor, sorter:"string"},
+        {title:"Security Monkey", field:"security_monkey", formatter:formatcolor, sorter:"string"},
+        {title:"Trusted Advisor", field:"trusted_advisor", formatter:formatcolor, sorter:"string"},
+        {title:"AWS Config Rule", field:"config_rule", formatter:formatcolor, sorter:"string"},
+        {title:"CloudMapper", field:"cloudmapper", formatter:formatcolor, sorter:"string"}
+    ],
+});
+
+    table.setData("./security_tools.json");
+</script>
