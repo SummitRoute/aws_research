@@ -58,7 +58,7 @@
 {"id":58, "service":"FSx", "sla":"N", "cloudtrail":"N", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":59, "service":"Firewall Management Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":60, "service":"GameLift", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
-{"id":61, "service":"Glacier", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"Y", "all_regions":"Y"},
+{"id":61, "service":"Glacier", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"Y", "all_regions":"Y"},
 {"id":62, "service":"Global Accelerator", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":63, "service":"Glue", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":64, "service":"Greengrass", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
