@@ -45,7 +45,7 @@
 {"id":45, "service":"DynamoDB", "sla":"Y", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"Y", "all_regions":"Y"},
 {"id":46, "service":"EC2", "sla":"Y", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":47, "service":"EC2 Container Registry", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
-{"id":48, "service":"EC2 Container Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
+{"id":48, "service":"EC2 Container Service", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":49, "service":"ElastiCache", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":50, "service":"Elastic Beanstalk", "sla":"N", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":51, "service":"Elastic Container Service for Kubernetes", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
