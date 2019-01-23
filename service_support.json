@@ -29,7 +29,7 @@
 {"id":29, "service":"CodeDeploy", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":30, "service":"CodePipeline", "sla":"N", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":31, "service":"CodeStar", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
-{"id":32, "service":"Cognito", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
+{"id":32, "service":"Cognito", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":33, "service":"Comprehend", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":34, "service":"Config", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":35, "service":"Connect Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
