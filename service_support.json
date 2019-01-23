@@ -1,6 +1,6 @@
 [
 {"id":2, "service":"Alexa For Business", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
-{"id":3, "service":"AmazonMQ", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
+{"id":3, "service":"AmazonMQ", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":4, "service":"Amplify", "sla":"N", "cloudtrail":"N", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":5, "service":"API Gateway", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":6, "service":"App Mesh", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
