@@ -117,7 +117,7 @@
 {"id":117, "service":"SSM", "sla":"N", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":118, "service":"Simple Workflow Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":119, "service":"SimpleDB", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
-{"id":120, "service":"Step Functions", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
+{"id":120, "service":"Step Functions", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":121, "service":"Storage Gateway", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"Y", "all_regions":"Y"},
 {"id":122, "service":"Support", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":123, "service":"Transcribe Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
