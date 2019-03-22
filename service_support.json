@@ -70,7 +70,7 @@
 {"id":70, "service":"IoT", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":71, "service":"Key Management Service", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":72, "service":"Kinesis", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
-{"id":73, "service":"Kinesis Analytics", "sla":"N", "cloudtrail":"N", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
+{"id":73, "service":"Kinesis Analytics", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":74, "service":"Kinesis Firehose", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":75, "service":"Kinesis Video Streams", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":76, "service":"Lambda", "sla":"Y", "cloudtrail":"Y", "config":"Y", "encryption_at_rest":"N", "all_regions":"Y"},
