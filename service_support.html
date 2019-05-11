@@ -75,6 +75,7 @@ formatcolor = function(cell, formatterParams){
 
 var table = new Tabulator("#table", {
     layout:"fitColumns",
+    layoutColumnsOnNewData:true,
     placeholder:"No Data Set",
     columns:[
         {title:"Service", field:"service", sorter:"string", width:200},
