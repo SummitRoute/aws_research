@@ -68,6 +68,7 @@ formatcolor = function(cell, formatterParams){
 
 var table = new Tabulator("#table", {
     layout:"fitColumns",
+    layoutColumnsOnNewData:true,
     placeholder:"No Data Set",
     columns:[
         {title:"Rule", field:"rule", sorter:"string", width:200},
