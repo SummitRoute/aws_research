@@ -66,6 +66,10 @@ formatcolor = function(cell, formatterParams){
     return cell.getValue();
 };
 
+hyperlinkMutator = function (value) {
+    return "<a href='" + value + "'>" + value + "</a>";
+};
+
 var table = new Tabulator("#table", {
     layout:"fitColumns",
     layoutColumnsOnNewData:true,
@@ -73,11 +77,11 @@ var table = new Tabulator("#table", {
     columns:[
         {title:"Rule", field:"rule", sorter:"string", width:200},
         {title:"Type", field:"type", formatter:formatcolor, sorter:"string"},
-        {title:"PacBot", field:"pacbot", formatter:formatcolor, sorter:"string"},
-        {title:"Prowler", field:"prowler", formatter:formatcolor, sorter:"string"},
-        {title:"Security Monkey", field:"security_monkey", formatter:formatcolor, sorter:"string"},
+        {title:"PacBot", field:"pacbot", formatter:formatcolor, mutator:hyperlinkMutator, sorter:"string"},
+        {title:"Prowler", field:"prowler", formatter:formatcolor, mutator:hyperlinkMutator, sorter:"string"},
+        {title:"Security Monkey", field:"security_monkey", formatter:formatcolor, mutator:hyperlinkMutator, sorter:"string"},
         {title:"Trusted Advisor", field:"trusted_advisor", formatter:formatcolor, sorter:"string"},
-        {title:"AWS Config Rule", field:"config_rule", formatter:formatcolor, sorter:"string"},
+        {title:"AWS Config Rule", field:"config_rule", formatter:formatcolor, mutator:hyperlinkMutator, sorter:"string"},
         {title:"CloudMapper", field:"cloudmapper", formatter:formatcolor, sorter:"string"}
     ],
 });
