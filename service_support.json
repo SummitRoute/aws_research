@@ -79,7 +79,7 @@
 {"id":79, "service":"Lightsail", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":80, "service":"Machine Learning", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":81, "service":"Macie", "sla":"N", "cloudtrail":"N", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
-{"id":82, "service":"Kafka", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
+{"id":82, "service":"Kafka", "sla":"Y", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":83, "service":"Marketplace", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"Y"},
 {"id":84, "service":"Mechanical Turk", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
 {"id":85, "service":"MediaConnect", "sla":"N", "cloudtrail":"Y", "config":"N", "encryption_at_rest":"N", "all_regions":"N"},
