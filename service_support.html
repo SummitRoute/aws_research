@@ -80,10 +80,11 @@ var table = new Tabulator("#table", {
     columns:[
         {title:"Service", field:"service", sorter:"string", width:200},
         {title:"SLA", field:"sla", formatter:formatcolor, sorter:"string"},
-        {title:"CloudTrail support", field:"cloudtrail", formatter:formatcolor, sorter:"string"},
-        {title:"Config support", field:"config", formatter:formatcolor, sorter:"string"},
+        {title:"CloudFormation", field:"cloudformation", formatter:formatcolor, sorter:"string"},
+        {title:"CloudTrail", field:"cloudtrail", formatter:formatcolor, sorter:"string"},
+        {title:"Config", field:"config", formatter:formatcolor, sorter:"string"},
         {title:"Encryption at rest by default", field:"encryption_at_rest", formatter:formatcolor, sorter:"string"},
-        {title:"Runs in all regions", field:"all_regions", formatter:formatcolor, sorter:"string"}
+        {title:"All regions", field:"all_regions", formatter:formatcolor, sorter:"string"},
     ],
 });
 
